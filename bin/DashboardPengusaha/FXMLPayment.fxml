@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashboardPengusaha.FXMLPaymentController">
+    <children>
+      <Pane prefHeight="84.0" prefWidth="700.0" style="-fx-background-color: #990000;">
+         <children>
+            <Button fx:id="Dashboard" layoutX="20.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleDashboardAction" style="-fx-background-color: #990000;" text="Dashboard">
+               <font>
+                  <Font name="Poppins Regular" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <VBox layoutY="46.0" prefHeight="422.0" prefWidth="174.0" spacing="40.0" style="-fx-background-color: #990000;" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <Button fx:id="SBBusProfile" mnemonicParsing="false" onAction="#handleSBBusProfileAction" prefHeight="33.0" prefWidth="183.0" style="-fx-background-color: #990000;" text="Business Profile" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="SBFinancialStats" mnemonicParsing="false" onAction="#handleSBFinancialStatsAction" prefHeight="33.0" prefWidth="188.0" style="-fx-background-color: #990000;" text="Financial statistics" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font></Button>
+            <Button fx:id="SBPayment" mnemonicParsing="false" onAction="#handleSBPaymentAction" prefHeight="33.0" prefWidth="179.0" style="-fx-background-color: #990000;" text="Payment">
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <Pane layoutX="174.0" layoutY="47.0" prefHeight="454.0" prefWidth="528.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label fx:id="labelOwner" layoutX="60.0" layoutY="96.0" minHeight="16" minWidth="69" text="Nama Penerima">
+               <font>
+                  <Font name="Poppins Regular" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="NamaPenerima" layoutX="205.0" layoutY="90.0" prefHeight="28.0" prefWidth="276.0" />
+            <Label fx:id="labelOwner1" layoutX="60.0" layoutY="149.0" minHeight="16" minWidth="69" text="Nama Pengirim">
+               <font>
+                  <Font name="Poppins Regular" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="NamaPengirim" layoutX="205.0" layoutY="143.0" prefHeight="28.0" prefWidth="276.0" />
+            <Label fx:id="labelOwner2" layoutX="60.0" layoutY="204.0" minHeight="16" minWidth="69" text="Jumlah">
+               <font>
+                  <Font name="Poppins Regular" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Nominal" layoutX="205.0" layoutY="200.0" prefHeight="28.0" prefWidth="276.0" />
+            <Button fx:id="Accept" layoutX="430.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleAcceptAction" text="Accept" />
+         </children></Pane>
+    </children>
+</AnchorPane>

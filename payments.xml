@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<payments>
+    <payment>
+        <sender>Mahendra</sender>
+        <recipient>Danendra</recipient>
+        <amount>Rp.2.000.0000</amount>
+    </payment>
+    <payment>
+        <sender>Farrel</sender>
+        <recipient>Danendra</recipient>
+        <amount>50.000.000</amount>
+    </payment>
+</payments>

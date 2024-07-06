@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\Lenovo\\Documents\\java jdk\\jackson\\jackson-core-2.13.0.jar",
+        "c:\\Users\\Lenovo\\Documents\\java jdk\\jackson\\jackson-databind-2.13.0.jar",
+        "c:\\Users\\Lenovo\\Documents\\java jdk\\jackson\\jackson-annotations-2.17.1-javadoc.jar"
+    ]
+}

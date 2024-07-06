@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginRegister.FXMLLogController">
+    <children>
+        <Button fx:id="ButtonLogin" layoutX="331.0" layoutY="295.0" onAction="#handleButtonLoginAction" prefHeight="28.0" prefWidth="159.0" style="-fx-background-color: #990000;" text="Login" textFill="WHITE" />
+        <Label fx:id="label" layoutX="280.0" layoutY="103.0" minHeight="16" minWidth="69" text="Login">
+         <font>
+            <Font name="Poppins Bold" size="11.686956405639648" />
+         </font></Label>
+      <TextField fx:id="username" layoutX="280.0" layoutY="141.0" prefHeight="28.0" prefWidth="235.0" promptText="USERNAME" />
+      <TextField fx:id="password" layoutX="280.0" layoutY="185.0" prefHeight="28.0" prefWidth="235.0" promptText="PASSWORD" />
+      <TextField fx:id="OTP" alignment="CENTER" layoutX="280.0" layoutY="236.0" prefHeight="28.0" prefWidth="102.0" promptText="OTP CODE" />
+      <Text layoutX="281.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="“I agree to the terms and conditions as set out by the user agreement and Privacy Policy”" wrappingWidth="321.00408935546875">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Button fx:id="ButtonOTP" layoutX="398.0" layoutY="236.0" onAction="#handleButtonOTPAction" prefHeight="28.0" prefWidth="44.0" style="-fx-background-color: #990000;" text="OTP" textFill="WHITE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#990000" height="505.0" stroke="BLACK" strokeWidth="0.0" width="200.0" />
+      <Text layoutX="490.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="don’t have account?" />
+      <Button fx:id="linkRegister" layoutX="602.0" layoutY="463.0" mnemonicParsing="false" onAction="#handleLinkRegister" text="Register" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Poppins Regular" size="10.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
